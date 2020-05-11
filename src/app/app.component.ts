@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import * as AOS from 'aos'
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'dashbord';
+  ngOnInit() {
+    AOS.init();
+  }
+
+  onActivate(event){
+    window.scroll(0,0);
+  }
 }

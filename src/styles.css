@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bitter&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Special+Elite&display=swap');
+
+.font-title{
+    font-family: 'Abril Fatface', cursive;
+
+}
+
+.font2{
+    font-family: 'Fredoka One', cursive;
+}

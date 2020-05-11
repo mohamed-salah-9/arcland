@@ -1,0 +1,88 @@
+<app-head>
+  <ng-container class="h2">contact us</ng-container>
+  <ng-container class="p">home - <span class="-span">contact</span></ng-container>
+</app-head>
+
+<div style="background-color: #eeeeee;">
+
+
+  <section class="container contact-form">
+    <div class="row">
+      <div class="col-12 col-lg-4">
+        <img src="assets/contact/contact1.png" width="100%">
+        <!---
+        <div class="row">
+          <div class="col-4 col-lg-4">
+            <i class="fas fa-location-arrow"></i>
+            <h6>main office</h6>
+            <p> Abbas El-Akkad, Al Manteqah Al Oula, Nasr City</p>
+          </div>
+          <div class="col-4 col-lg-4">
+            <i class="fas fa-location-arrow"></i>
+            <h6>main office</h6>
+            <p> Abbas El-Akkad, Al Manteqah Al Oula, Nasr City</p>
+          </div>
+          <div class="col-4 col-lg-4">
+            <i class="fas fa-location-arrow"></i>
+            <h6>main office</h6>
+            <p> Abbas El-Akkad, Al Manteqah Al Oula, Nasr City</p>
+          </div>
+        </div>--->
+      </div>
+      <div class="col-12 col-lg-8">
+        <mat-horizontal-stepper linear #stepper class="contact-form1">
+          <mat-step [stepControl]="firstFormGroup" [editable]="isEditable">
+            <form [formGroup]="firstFormGroup">
+              <ng-template matStepLabel>Fill out your name</ng-template>
+              <mat-form-field>
+                <mat-label>Name</mat-label>
+                <input matInput formControlName="firstCtrl" placeholder="Last name, First name" required>
+              </mat-form-field>
+              <br>
+              <mat-form-field>
+                <mat-label>Name</mat-label>
+                <input matInput formControlName="firstCtrl" placeholder="Last name, First name" required>
+              </mat-form-field>
+              <br>
+              <mat-form-field>
+                <mat-label>Name</mat-label>
+                <input matInput formControlName="firstCtrl" placeholder="Last name, First name" required>
+              </mat-form-field>
+              <br>
+              <mat-form-field>
+                <mat-label>Name</mat-label>
+                <input matInput formControlName="firstCtrl" placeholder="Last name, First name" required>
+              </mat-form-field>
+              <div>
+                <button mat-button matStepperNext>Next</button>
+              </div>
+            </form>
+          </mat-step>
+          <mat-step [stepControl]="secondFormGroup" [editable]="isEditable">
+            <form [formGroup]="secondFormGroup">
+              <ng-template matStepLabel>Fill out your address</ng-template>
+              <mat-form-field>
+                <mat-label>Address</mat-label>
+                <input matInput formControlName="secondCtrl" placeholder="Ex. 1 Main St, New York, NY" required>
+              </mat-form-field>
+              <div>
+                <button mat-button matStepperPrevious>Back</button>
+                <button mat-button matStepperNext>Next</button>
+              </div>
+            </form>
+          </mat-step>
+          <mat-step>
+            <ng-template matStepLabel>Done</ng-template>
+            <p>You are now done.</p>
+            <div>
+              <button mat-button matStepperPrevious>Back</button>
+              <button mat-button (click)="stepper.reset()">Reset</button>
+            </div>
+          </mat-step>
+        </mat-horizontal-stepper>
+      </div>
+    </div>
+  </section>
+
+</div>
+
