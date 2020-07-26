@@ -8,10 +8,11 @@
         <div class="col-12 col-lg-6 pt-4 wow slideInLeft slow">
             <p class="first-p">WHAT WE DO?</p>
             <h2 class="first-h2 font-title pt-3">Design for life</h2>
-            <p class="font2 pt-3">Bring to the table win-win survival strategies to ensure proactive domination. At
-                the end of the day, going forward, a new normal that has evolved from generation X is on the runway
-                heading towards a streamlined cloud solution. User generated content in real-time will have multiple
-                touchpoints for offshoring.
+            <p class="font2 pt-3">It is considered one of the companies specialized in interior design, decorations,
+                landscape and architectural solutions since 2010 up till now.
+                We offer fresh and different ideas for residential and commercial designs, we work closely with our
+                clients throughout every stage of the design process.
+
             </p>
         </div>
         <div class="col-12 col-lg-6 wow zoomIn">
@@ -20,8 +21,8 @@
     </div>
 </section>
 
+<!----
 <hr class="" align="center" width="80%">
-
 <section class="container" style="padding-top: 5%; padding-bottom: 5%;">
     <div class="row">
         <div class="col-12 col-lg-6 wow zoomIn">
@@ -56,82 +57,30 @@
             <img src="assets/about/about1.jpg" width="100%" height="">
         </div>
     </div>
-</section>
+</section>--->
 
 <!----clients---->
 <section class="about3">
     <div class="container" style="padding-top:10% ; padding-bottom: 3%;">
         <div class="col-12 col-lg-6 p-0">
             <p>CONFIDING US</p>
-            <h2 class="about3-h2 font-title">Our respectable clients</h2>
-            <p class="font2 about3-p">Quickly disseminate superior deliverables whereas web-enabled applications.
-                Quickly drive clicks-and-mortar
-                catalysts for change before vertical architectures.</p>
+            <h2 class="about3-h2 font-title">Our  respectable clients</h2>
+            <p class="font2 about3-p"></p>
         </div>
         <div class="row pt-3">
-            <div class="col-6 col-lg-3  wow zoomIn" style="animation-delay:.5s;">
+            <div class="col-6 col-lg-3  wow zoomIn" style="animation-delay:.5s;" *ngFor='let log of logo'>
                 <div class="card mb-3" style="border: none;">
                     <div class="text-center">
-                        <img src="assets/about/moun.jpg" width="50%">
-                    </div>
-                </div>
-            </div>
-            <div class="col-6 col-lg-3  wow zoomIn" style="animation-delay:1s;">
-                <div class="card mb-3" style="border: none;">
-                    <div class="text-center">
-                        <img src="assets/about/moun.jpg" width="50%">
-                    </div>
-                </div>
-            </div>
-            <div class="col-6 col-lg-3  wow zoomIn" style="animation-delay:1.5s;">
-                <div class="card mb-3" style="border: none;">
-                    <div class="text-center">
-                        <img src="assets/about/moun.jpg" width="50%">
-                    </div>
-                </div>
-            </div>
-            <div class="col-6 col-lg-3  wow zoomIn" style="animation-delay:2s;">
-                <div class="card mb-3" style="border: none;">
-                    <div class="text-center">
-                        <img src="assets/about/moun.jpg" width="50%">
+                        <img src="{{log.image}}" width="50%">
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-6 col-lg-3 wow zoomIn" style="animation-delay:2.5s;">
-                <div class="card mb-3" style="border: none;">
-                    <div class="text-center">
-                        <img src="assets/about/moun.jpg" width="50%">
-                    </div>
-                </div>
-            </div>
-            <div class="col-6 col-lg-3 wow zoomIn" style="animation-delay:3s;">
-                <div class="card mb-3" style="border: none;">
-                    <div class="text-center">
-                        <img src="assets/about/moun.jpg" width="50%">
-                    </div>
-                </div>
-            </div>
-            <div class="col-6 col-lg-3 wow zoomIn" style="animation-delay:3.5s;">
-                <div class="card mb-3" style="border: none;">
-                    <div class="text-center">
-                        <img src="assets/about/moun.jpg" width="50%">
-                    </div>
-                </div>
-            </div>
-            <div class="col-6 col-lg-3 wow zoomIn" style="animation-delay:4s;">
-                <div class="card mb-3" style="border: none;">
-                    <div class="text-center">
-                        <img src="assets/about/moun.jpg" width="50%">
-                    </div>
-                </div>
-            </div> 
-        </div>
+      
     </div>
 </section>
 
-<!---Services--->
+<!---Services
 <section class="container-fluid" style="padding: 10% 5% 10% 5%;">
     <div class="col-12 col-lg-6 p-0">
         <p>WHAT ELSE DO WE DO</p>
@@ -214,21 +163,7 @@
             </div>
         </div>
     </div>
-</section>
+</section>--->
 
 
 <!---contact--->
-
-<section class=" about4  " style="margin-top:0% ">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-lg-6 pt-5 pb-5 wow slideInLeft">
-                <h2 class="font-title contact-h2 pt-4">Get meeting now</h2>
-                <p class="font2 contact-p">Efficiently unleash cross-media information without cross-media value. Quickly
-                    maximize timely deliverables for real-time schemas.
-                </p>
-                <a [routerLink]="['/contact']" class="contact-a btn rounded-pill">GO</a>
-            </div>
-        </div>
-    </div>
-</section>

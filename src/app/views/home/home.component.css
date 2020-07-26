@@ -248,3 +248,20 @@ transform: scale(1.2);
   background-color: black;
   color: white;
 } 
+
+
+@media  screen and (max-width: 500px) {
+  .imgs{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1000px) and (min-width:500px) {
+  
+} 
+
+.abd{
+  background-image: url('/assets/abd.jpeg');
+  background-attachment: fixed;
+  background-size: cover;
+}

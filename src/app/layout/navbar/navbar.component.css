@@ -26,6 +26,9 @@
 .ancor-header:focus { 
   color: #CD6155 !important;
 }
+.ancor-header:active{
+  color: #CD6155 !important;
+}
 .font{
     font-family: "Montserrat";
     text-transform: uppercase;

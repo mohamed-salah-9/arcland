@@ -23,3 +23,10 @@
 .mat-form-field {
     margin-top: 16px;
 }
+.label-s{
+    color: #578bb9;
+    font-weight: bolder;
+}
+.error-s{
+    color: red;
+}

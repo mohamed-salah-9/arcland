@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { AgmCoreModule } from '@agm/core'
+import { AgmCoreModule } from '@agm/core';
+import { HttpClientModule, HTTP_INTERCEPTORS} from '@angular/common/http';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './views/home/home.component';
@@ -20,9 +22,14 @@ import {
   MatRippleModule
 } from '@angular/material';
 import {MatStepperModule} from '@angular/material/stepper';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule   } from '@angular/forms';
 import { FooterComponent } from './layout/footer/footer.component';
 import { ServicesComponent } from './views/services/services.component';
+import { DetailsService } from './services/details.service';
+import { SingleimgComponent } from './views/singleimg/singleimg.component';
+import { NumericDirective } from "./numeric.directive"
+import { from } from 'rxjs';
+import { LightboxModule } from 'ngx-lightbox';
 
 
 @NgModule({
@@ -37,7 +44,9 @@ import { ServicesComponent } from './views/services/services.component';
     HeadComponent,
     PhotosComponent,
     FooterComponent,
-    ServicesComponent
+    ServicesComponent,
+    SingleimgComponent,
+    NumericDirective
   ],
   imports: [ 
     BrowserModule,
@@ -50,12 +59,16 @@ import { ServicesComponent } from './views/services/services.component';
     MatButtonModule,
     MatFormFieldModule,
     MatInputModule,
+    HttpClientModule,
     MatRippleModule ,
+    LightboxModule ,
     AgmCoreModule.forRoot({
         apiKey : 'AIzaSyCOAZ3sQ2kjkL8f7Uoil6B3R4fT562HsXM'
-    })
+    }),
+    
   ],
-  providers: [],
+  providers: [DetailsService],
   bootstrap: [AppComponent]
 }) 
 export class AppModule { }
+ 

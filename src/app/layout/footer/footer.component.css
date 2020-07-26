@@ -4,6 +4,7 @@
     background-image: url('/assets/footer.jpg');
     background-attachment: fixed;
     background-size: cover;
+    height: 657px;
 }
 .footer-h2{
     font-family: 'Russo One', sans-serif;
@@ -11,7 +12,7 @@
     font-size: 40px;
     letter-spacing: 5px;
 }
-.footer-line{
+.footer-line{ 
     border: 1px solid #9a7055;
 }
 .footer-h3{
@@ -42,3 +43,22 @@ agm-map{
     height: 100%;
 }
 
+@media  screen and (max-width: 500px) {
+    .footer{
+        height: 880px;;
+     }
+     agm-map{
+        width:100%;
+        height: 100%;
+    }
+  }
+  
+@media screen and (max-width: 1000px) and (min-width:500px) {
+    .footer{
+       height: 840px;;
+    }
+    agm-map{
+        width:100%;
+        height: 100%;
+    }
+  } 

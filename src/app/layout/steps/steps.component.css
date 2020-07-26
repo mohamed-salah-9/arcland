@@ -6,7 +6,7 @@
 }
 .step-h2{
     position: relative;
-    font-size: 4.5rem;
+    font-size: 2.5rem;
     color: white;
     font-weight: bolder;
     word-spacing: 10px;
@@ -64,7 +64,7 @@
 @media  screen and (max-width: 500px) {
     .step-h2{
         position: relative;
-        font-size: 3rem;
+        font-size: 30px;
         color: white;
         font-weight: bolder;
         word-spacing: 10px;

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ImagesService } from 'src/app/services/images.service'
 
 @Component({
   selector: 'app-photos',
@@ -6,10 +7,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./photos.component.css']
 })
 export class PhotosComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
+  imagess : any[] = [];
+  constructor(private IS : ImagesService) {  
+    this.AddMyimage()
   }
 
+  ngOnInit() {
+    this.AddMyimage()
+  }
+  
+  AddMyimage() {
+    this.IS.getimages().subscribe(
+      data => {this.imagess = data ; 
+        console.log(this.imagess) 
+      }
+      );
+  }
 }
